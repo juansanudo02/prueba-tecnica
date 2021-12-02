@@ -1,15 +1,14 @@
 
 import './App.css';
-import Header from './components/Header';
-import Brand from './components/Brand';
-import Banner from './components/Banner';
+
+import LandingPages from './pages/LandingPages/index';
+
 
 function App() {
   return (
    <>
-   <Header/>
-   <Brand />
-   <Banner/>
+   <LandingPages />
+   
    </>
   );
 }

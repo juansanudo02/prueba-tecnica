@@ -1,5 +1,6 @@
 import React from "react"
 import principalBanner from "../logo/eckoBanner.png"
+import "../styles/landingPages.scss"
 
 const Banner = () =>{
  return(

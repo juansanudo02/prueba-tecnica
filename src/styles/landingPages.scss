@@ -98,5 +98,75 @@
   }
  
 
- 
+  //start-brand
+  .brand__ekco{
+    display: flex;
+    height: 123px;
+    align-items: center;
+    justify-content: center;
+  }
+  .brand__ekco img{
+     
+       width: 129.17px; 
+       height: 50px;
+  }
 
+  //start-banner
+
+  .banner__ekco img{
+    width: 100vw;
+}
+
+//start-recipe
+.contain{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr)
+}
+.contain__img{
+    width: 70px;
+    height: 70px; 
+    margin-left: 76px;
+    margin-top: 40px;
+    
+}
+
+.contain__description{
+   margin-top: 90px;
+   padding-left: 100px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   width: 350px;   
+   height: 450px;
+}
+.contain__description h1{
+    
+    font-size: 48px;
+}
+.contain__description h3{
+    
+    font-size: 24px;
+}
+.contain__ingredients__title{
+    margin-top: 30px;
+    font-size: 14px;
+    
+    
+}
+.contain__ingredients__text{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.contain__ingredients__ver{
+    margin-top: 30px;
+    font-size: 14px;
+   
+}
+
+//landing--body
+
+.landing__body{
+    width: 100vw;
+}

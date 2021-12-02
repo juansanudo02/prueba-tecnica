@@ -1,5 +1,5 @@
 import React from "react"
-import "../styles/header.scss"
+import "../styles/landingPages.scss"
 import logo from "../logo/logo.jpg"
 import user from "../icon/user.png"
 import minicart from "../icon/minicart.png"
@@ -9,8 +9,8 @@ const Header = () =>{
      <>
       <header className="header">
                 <div className="header__add">
-                <p className="header__add__text">ENVÍO GRATIS EN PEDIDOS DESDE $699</p>
-              </div>
+                  <p className="header__add__text">ENVÍO GRATIS EN PEDIDOS DESDE $699</p>
+                </div>
         <nav>       
        
         <img src={logo} alt="menu" className="navbar__logo"/>

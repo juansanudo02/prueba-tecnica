@@ -1,6 +1,6 @@
 import React from "react"
 import Ekco from "../logo/EKCO.png"
-import "../styles/brand.scss"
+import "../styles/landingPages.scss"
 
 const Brand = () =>{
  return(

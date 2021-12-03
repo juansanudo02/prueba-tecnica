@@ -209,3 +209,32 @@
      color: #EBA904;
      font-size: 20px;
  }
+
+
+ //characters
+.final{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 100px;
+}
+.final__characters{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.final__characters h1{
+    margin-bottom: 10px;
+}
+.final__questions{
+    padding-left: 40px;
+    padding-right: 100px;
+}
+.final__questions p{
+ margin-top:10px;
+}
+.final__character__rickandmorty{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+
+}

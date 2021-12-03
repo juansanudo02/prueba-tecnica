@@ -5,6 +5,7 @@ import Brand from '../../components/Brand'
 import Recipe from '../../components/Recipe'
 import ImageCarousel from '../../components/ImageCarousel'
 import CarouselItem from './mostsold.png'
+import Characters from '../../components/Characters'
 
 
 
@@ -104,7 +105,7 @@ const landingPagesCont = () => {
             <Banner/>
             <Recipe />    
              <ImageCarousel images={images} />
-             
+             <Characters />
             
              
 

@@ -120,7 +120,9 @@
 //start-recipe
 .contain{
     display: grid;
-    grid-template-columns: repeat(2, 1fr)
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 200px;
+    
 }
 .contain__img{
     width: 70px;
@@ -169,4 +171,41 @@
 
 .landing__body{
     width: 100vw;
+  
+    
 }
+
+//the most sold
+
+
+.carousel__Item{
+    display: flex;
+    flex-direction: column;
+
+}
+.carousel__Item__img{
+    width: 300px;
+    height: 300px;
+    border:2px sol id #AAAAAA;
+}
+.carousel__item__title{
+   color: #666666;
+
+}
+.carousel__item__text{
+    color: #666666;
+ 
+ }
+ .carousel__item__view{
+    color: #000000;
+    text-align:center;
+    margin-top: 10px;
+   
+    
+ 
+ }
+ 
+ .border__yellow{
+     color: #EBA904;
+     font-size: 20px;
+ }

@@ -8,6 +8,7 @@ const Banner = () =>{
       <section className="banner__ekco">
           <img src={principalBanner} alt="principalBanner" />
       </section>
+      
      </>
  )
 }

@@ -32,11 +32,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-top: 15px;
    
        
 }
 .header__add__text{
-    text-align: center;
+    
+    
     color: white;
     font-size: 12px;
     font-family: Museo Sans;
@@ -186,7 +188,13 @@
 .carousel__Item{
     display: flex;
     flex-direction: column;
+    padding-left: 50px ;
+   
 
+}
+.carousel__Item h1{
+    text-align: center;
+    font-weight: bold;
 }
 .carousel__Item__img{
     width: 300px;
@@ -195,6 +203,10 @@
 }
 .carousel__item__title{
    color: #666666;
+   font-size: 30px;
+   font-weight: bold;
+
+
 
 }
 .carousel__item__text{
@@ -209,7 +221,9 @@
     
  
  }
- 
+ .carousel__Item__slider{
+     text-align: left;
+ }
  .border__yellow{
      color: #EBA904;
      font-size: 20px;
@@ -229,9 +243,7 @@
     
     
 }
-.final__characters h1{
-    margin-bottom: 10px;
-}
+
 .final__questions{
     padding-left: 40px;
     padding-right: 100px;
@@ -239,16 +251,28 @@
 .final__questions p{
  margin-top:10px;
 }
+.final__questions__text{
+    font-size: 12px;
+}
 
 .final__character__rickandmorty{
     display: flex;
     flex-direction: column;
-    justify-content:space-evenly;
+    
 
 }
 .final__character__rickandmorty p{
+    font-weight: bold;
     font-size: 18px;
 }
+.final__characters h4{
+    font-weight: bold;
+    text-align: left;
+}
+.final__character__rickandmorty__name{
+    margin-top: 50px;
+}
+
 .final__character__episodies{
     width: 100px;
     height: 100px;
@@ -256,3 +280,62 @@
     flex-direction: column;
     
 }
+.final__character__episodies{
+    font-size: 12px;
+}
+
+//menu
+
+
+
+.final__questions__text a{
+    text-decoration : none;
+     color : #2d2f31;
+     text-align: left;
+     
+    }
+
+
+
+span {
+//   padding : 30px;
+  background : white; 
+  color : black;
+  font-size : 1.2em;
+  cursor : pointer;
+  display: block;
+  font-size: 20px;
+  font-weight: bold;
+  border-bottom: 1px solid #999999;
+  
+
+}
+
+span::after {
+    float: right;
+    right: 10%;
+    margin-left: 32vw;
+    content: "+";
+    font-size: 20px;
+    font-weight: bold;
+    
+    
+}
+
+.slide {
+    clear:both;
+    width:100%;
+    height:0px;
+    overflow: hidden;
+    text-align: center;
+    transition: height .4s ease;
+  }
+  
+  .slide li {
+      padding : 30px;
+      text-align: left;
+    }
+  
+  #touch {position: absolute; opacity: 0; height: 0px;}    
+  
+  #touch:checked + .slide {height: 300px;} 

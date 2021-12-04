@@ -131,12 +131,7 @@ const LandingPagesCont = () => {
             <Banner/>
             <Recipe />    
              <ImageCarousel images={images} />
-             <Characters characters={characters}/>
-             
-            
-             
-
-            
+             <Characters characters={characters}/>         
         </div>
     )
 }

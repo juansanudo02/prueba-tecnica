@@ -23,13 +23,14 @@ function ImageCarousel({images}) {
 
       
       return (
-        
+     
           <div className="carousel__Item">
+               <h1>Los más vendidos</h1>
             <Slider {...settings} >
               {images.map((item) => (
-                <div key={item.id}>
-                  <img src={item.src}  alt={item.alt}  />
-                  <h1 className="carousel__item__title">Título</h1>
+                <div key={item.id} className="carousel__Item__slider">
+                  <img src={item.src}  alt={item.alt} width="273.13px" height="261.79" />
+                  <p className="carousel__item__title">Título</p>
                   <p className="carousel__item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   <p className="carousel__item__view"><ins>VER</ins> TODO</p>
                   <p className="border__yellow">___</p>

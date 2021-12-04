@@ -1,7 +1,9 @@
 import React from 'react'
 import BlankImage from '../logo/mostsold.png'
-const Characters = () => {
-    return (
+
+const Characters = ({ characters = []}) => {
+    return (<>
+       
         <section className="final">
             <div className="final__questions">
                 <h1>Pregunta 1              +</h1>
@@ -23,16 +25,45 @@ const Characters = () => {
                    eum fugiat quo voluptas nulla pariatur?</p>
             </div>
             <div className="final__characters">
-                <div className="final__characters__img"><h1>Personajes</h1>
-                <img src={BlankImage}></img>
-                </div>
-                <div className="final__character__rickandmorty">
-                    <h3>Nombre:</h3>
-                    <h3>Género:</h3>
-                    <h3>Primeros 5 episodios</h3>
-                </div>
+
+                
+                 
+
+                            <div  className="col">
+                            <h1>Personajes</h1>
+                                <div className="col card">
+                                    <img src={characters.image} alt="ricky"/>
+                                </div>
+                            
+                           
+                         
+                                </div>  
+                    <div className="final__character__rickandmorty">
+                        <p>Nombre: {characters.name}</p>
+                        <p>Genero: {characters.gender}</p>
+                        <p  >Primero 5 episodios:</p> 
+                        <div class="final__character__episodies">
+                           {characters?.episode?.map((e, inx) => {
+                             if( inx <= 4){
+                                 return (
+                                    <ul>
+                                      <li>{e} </li>
+                                    
+                                    </ul>
+                                 )
+                             }
+                            })
+                        }
+                            
+                            
+                            </div>
+                                              
+                        
+                              
+             </div>
             </div>
         </section>
+        </>
     )
 }
 

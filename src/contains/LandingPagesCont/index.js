@@ -1,11 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from "react";
 import Header from '../../components/Header'
 import Banner from '../../components/Banner'
 import Brand from '../../components/Brand'
 import Recipe from '../../components/Recipe'
 import ImageCarousel from '../../components/ImageCarousel'
 import CarouselItem from './mostsold.png'
-import Characters from '../../components/Characters'
+import Characters from "../../components/Characters";
+
+
+
+// components
+
+
 
 
 
@@ -97,7 +103,27 @@ const images = [
   
 ];
 
-const landingPagesCont = () => {
+const LandingPagesCont = () => {
+    
+  const[characters, setCharacters] = useState([])
+  const initialUrl =  "https://rickandmortyapi.com/api/character/"
+
+
+  const fetchCharacters = (url) =>{
+    fetch(url)
+      .then(response => response.json())
+      .then(data => {
+       const resultado = data.results 
+       setCharacters(resultado[0])
+      })
+      .catch(error => console.log(error))
+  }
+
+  useEffect(() =>{
+    fetchCharacters(initialUrl)
+  },[])
+
+
     return (
         <div className="landing__body">
             <Header />
@@ -105,7 +131,8 @@ const landingPagesCont = () => {
             <Banner/>
             <Recipe />    
              <ImageCarousel images={images} />
-             <Characters />
+             <Characters characters={characters}/>
+             
             
              
 
@@ -114,4 +141,4 @@ const landingPagesCont = () => {
     )
 }
 
-export default landingPagesCont
+export default LandingPagesCont

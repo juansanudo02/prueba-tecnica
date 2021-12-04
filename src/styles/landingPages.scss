@@ -1,18 +1,23 @@
-
+@font-face {font-family: "Museo Sans 100"; 
+    src: url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.eot"); 
+    src: url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.eot?#iefix") 
+    format("embedded-opentype"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.woff2") 
+    format("woff2"), url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.woff") format("woff"),
+     url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.ttf") format("truetype"), 
+     url("//db.onlinewebfonts.com/t/3b12f78c783e678acc1f0fefe8e46380.svg#Museo Sans 100") format("svg"); }
 :root {
     --white: #FFFFFF;
     --black: #000000;
     --very-light-grey: #EAE8E8;
     --text-input-field: #F7F7F7;
     --hospital-yellow: #EBA904;
-    --sm: 14px;
-    --md: 16px;
-    --lg: 18px;
+    
   }
-  body{
-    font-family: 'Museo Sans';
-  }
+ 
+ 
   *{
+      
+    font-family: "Museo Sans 100";
 	margin: 0;
 	padding: 0;
 	list-style: none;
@@ -221,6 +226,8 @@
     
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    
+    
 }
 .final__characters h1{
     margin-bottom: 10px;
@@ -232,9 +239,20 @@
 .final__questions p{
  margin-top:10px;
 }
+
 .final__character__rickandmorty{
     display: flex;
     flex-direction: column;
     justify-content:space-evenly;
 
+}
+.final__character__rickandmorty p{
+    font-size: 18px;
+}
+.final__character__episodies{
+    width: 100px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    
 }

@@ -33,7 +33,7 @@ function ImageCarousel({images}) {
                   <p className="carousel__item__title">Título</p>
                   <p className="carousel__item__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                   <p className="carousel__item__view"><ins>VER</ins> TODO</p>
-                  <p className="border__yellow">___</p>
+                  
                 </div>
               ))}
             </Slider>

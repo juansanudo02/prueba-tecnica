@@ -1,15 +1,11 @@
 import React from 'react'
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-
-
-
-
-  
+import "slick-carousel/slick/slick-theme.css";  
 
 function ImageCarousel({images}) {
 
+  // plugin Slick Slider
   
     const settings = {
         infinite: true,
@@ -18,10 +14,8 @@ function ImageCarousel({images}) {
         arrows: true,
         slidesToScroll: 4,
         lazyLoad: true
-      };
-     
+      };   
 
-      
       return (
      
           <div className="carousel__Item">
@@ -36,12 +30,8 @@ function ImageCarousel({images}) {
                   
                 </div>
               ))}
-            </Slider>
-            
-            
+            </Slider>           
           </div>
-        
-        
       );
     
 }

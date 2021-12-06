@@ -4,17 +4,9 @@ import Banner from '../../components/Banner'
 import Brand from '../../components/Brand'
 import Recipe from '../../components/Recipe'
 import ImageCarousel from '../../components/ImageCarousel'
-import CarouselItem from './mostsold.png'
 import Characters from "../../components/Characters";
 
-
-
-// components
-
-
-
-
-
+//plugin Slick Slider
 const images = [
   {
     id: 1,

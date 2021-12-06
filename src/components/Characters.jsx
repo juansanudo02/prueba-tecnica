@@ -49,7 +49,7 @@ const Characters = ({ characters = []}) => {
                             <div  className="col">
                             
                                 <div>
-                                    <h4>Personajes</h4>
+                                    <h4>Personaje</h4>
                                     <img src={characters.image} alt="ricky"/>
                                 </div>                    
                          

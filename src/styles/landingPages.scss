@@ -11,6 +11,7 @@
     --very-light-grey: #EAE8E8;
     --text-input-field: #F7F7F7;
     --hospital-yellow: #EBA904;
+    --gray:#666666;
     
   }
  
@@ -24,9 +25,10 @@
 	text-decoration: none;
 	border: none;
 	outline: none;
+    
 }
 .header__add{
-    background-color:  #EBA904;
+    background-color:  var(--hospital-yellow);
     width: 100%;
     height: 40px;
     display: flex;
@@ -153,24 +155,29 @@
     font-size: 48px;
 }
 .contain__description h3{
-    
+    font-weight: bold;
     font-size: 24px;
 }
 .contain__ingredients__title{
     margin-top: 30px;
     font-size: 14px;
-    
+    font-weight: bold;
+    color: var(--gray);
     
 }
 .contain__ingredients__text{
     margin-top: 20px;
     font-size: 14px;
+    font-weight: bold;
+    color: var(--gray);
 }
 
 
 .contain__ingredients__ver{
     margin-top: 30px;
     font-size: 14px;
+    font-weight: bold;
+    color: var(--black);
    
 }
 
@@ -202,7 +209,7 @@
     border:2px sol id #AAAAAA;
 }
 .carousel__item__title{
-   color: #666666;
+   color: var(--gray);
    font-size: 30px;
    font-weight: bold;
 
@@ -210,11 +217,12 @@
 
 }
 .carousel__item__text{
-    color: #666666;
+    color: var(--gray);
  
  }
  .carousel__item__view{
-    color: #000000;
+    color: var(--black);
+    font-weight: bold;
     text-align:center;
     margin-top: 10px;
    
@@ -225,7 +233,7 @@
      text-align: left;
  }
  .border__yellow{
-     color: #EBA904;
+     color: var(--hospital-yellow);
      font-size: 20px;
  }
 
@@ -300,7 +308,7 @@
 span {
 //   padding : 30px;
   background : white; 
-  color : black;
+  color : var(--black);
   font-size : 1.2em;
   cursor : pointer;
   display: block;

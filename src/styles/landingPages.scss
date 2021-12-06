@@ -22,8 +22,7 @@
 	padding: 0;
 	list-style: none;
 	text-decoration: none;
-	border: none;
-	outline: none;    
+    
 }
 .header__add{
     background-color:  var(--hospital-yellow);
@@ -183,6 +182,7 @@
 }
 .carousel__item__text{
     color: var(--gray);
+    font-size: 14px;
  }
  .carousel__item__view{
     color: var(--black);
